@@ -1,0 +1,44 @@
+Algorithme SomDif
+
+Type
+
+Tab1=Tableau [1..n]
+Tab2=Tableau [1..m]
+Tab3=Tableau [1..l]
+
+Variable
+
+T1:Tab1
+T2:Tab2
+T3:Tab3
+i,j,k,n,m,l,Somme:entier
+
+Debut
+
+Pour i allant de 1 a n faire
+Lire (T1[i])
+fin pour
+
+Pour j allant de 1 a m faire
+Lire (T2[j])
+fin pour
+Somme = 0
+Pour i allant de 1 a n faire
+   Pour j allant de 1 a m faire
+     Si ( T1[i] <> T2[j]) alors
+       T3[k] <-- T1[i]
+       T3[k] <-- T2[j]
+     Sinon
+       Somme <-- Somme + T1[i]
+    FinSi
+Fin Pour
+Fin Pour
+
+
+Pour k allant de 1 a l faire
+Lire (T3[k])
+fin pour
+
+
+
+Fin
